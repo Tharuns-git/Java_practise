@@ -18,22 +18,20 @@ public class ElectricityBillCalculator {
        if(Type==1){
         if(units<=100)
             bill=units*2;
-        else if(units>=101 && units<=300)
-            bill =units*4;
-        else if(units <5000) 
-            bill =units*6; 
-        else
-            System.out.println("High Consumption alert");
+        else if(units<=300)
+            bill =(100*2)+(units-100)*4;
+        else 
+            bill =(100*2)+200*4+(units-300)*6; 
+        
        }
         else if(Type==2){
         if(units<=100)
             bill=units*5;
-        else if(units>=101 && units<=300)
-            bill =units*7;
-        else if(units <5000) 
-            bill =units*10; 
+        else if(units<=300)
+            bill =(100*5)+(units-100)*7;
         else
-            System.out.println("High Consumption alert");
+            bill =(100*5)+200*7+(units-300)*10; 
+      
        }
        else 
         System.out.println("invalid Type");
@@ -49,10 +47,16 @@ public class ElectricityBillCalculator {
         totalBill=bill;
 
 
+       
+
        System.out.println("Units consumed : "+units);
        System.out.println("Customer Type : "+Type);
        System.out.println("Bill : "+bill);
        System.out.println("Total bill : "+totalBill);
+
+       if(bill>5000){
+        System.out.println("High warning alert");
+       }
     }
 
 }
