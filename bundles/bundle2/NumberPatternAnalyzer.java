@@ -32,9 +32,6 @@ public class NumberPatternAnalyzer {
                 System.out.print(i + " ");
             }
         }
-
-
-     
         
         System.out.println();
         System.out.println("Even Count : "+evencount);
