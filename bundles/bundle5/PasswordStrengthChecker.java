@@ -12,7 +12,8 @@ class StrengthChecker{
         if(password.length()<8){
             System.out.println("week password");
             return;
-        }
+        } 
+        
 
         for(int i=0;i<password.length();i++){
             

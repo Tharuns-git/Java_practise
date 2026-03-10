@@ -12,6 +12,7 @@ class User {
         lastName = lname;
         birthYear = year;
     }
+    
 
     public void generateUserName() {
 

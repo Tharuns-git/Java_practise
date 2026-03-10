@@ -8,6 +8,7 @@ class Employee{
     }
 
     public void generateMail(){
+        
         StringBuilder sb =new StringBuilder();
         firstName=firstName.toLowerCase();
         lastName=lastName.toLowerCase();

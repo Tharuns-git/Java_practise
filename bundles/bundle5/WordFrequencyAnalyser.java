@@ -45,5 +45,6 @@ class Main {
         System.out.println(report);
 
         System.out.println("Most frequent word: " + maxWord + " (" + maxCount + " times)");
+        
     }
 }
